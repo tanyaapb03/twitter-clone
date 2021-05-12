@@ -23,26 +23,27 @@ function Post({
     return (
         <div className="post">
             <div className="post__avatar">
-                <Avatar src="https://iugwbm.com/wp-content/uploads/2018/07/drawing-1.png "/>
+                <Avatar src={avatar}/>
 
             </div>
             <div className="post__body">
             <div className="post__header">
             <div className="post__headerText">
                 <h3>
-                    Tanya {" "}
+                    {displayName}{" "}
                     <span> 
-                    <VerifiedUserIcon className="post__badge"/>
+                    {verified && <VerifiedUserIcon className="post__badge"/>}
+                    {username}
                     </span>
                 </h3>
             </div>
             <div className="post__headerDescription">
                 <p>
-                    Are you sure? 
+                    {text} 
                 </p>
                 </div>
                 
-                <img className="post_image" src="https://media.wired.com/photos/59326d5344db296121d6aee9/master/pass/8552.gif" 
+                <img className="post_image" src={image} 
                 alt=""/>
                 
             <div className="post__footer">

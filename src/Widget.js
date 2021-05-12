@@ -12,7 +12,7 @@ function Widget() {
                 <input placeholder="search Twitter" type="text"/>
             </div>
             <div className="widgets__widgetContainer">
-                <h4>what's Hapenning</h4>
+                
 
                 <Timeline
                 dataSource={{
@@ -20,7 +20,7 @@ function Widget() {
                     screenName: 'TwitterDev'
                 }}
                 options={{
-                    height: '400'
+                    height: '800'
                 }}
                 />
 
